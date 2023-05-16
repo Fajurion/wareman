@@ -1,0 +1,17 @@
+.dialog-input {
+    width: 40vw;
+    max-width: 350px;
+    min-width: 280px;
+    padding: 0.5rem 0.7rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    border: 2px solid var(--outer-space);
+    background-color: var(--outer-space);
+    transition: 250ms border ease;
+
+    &:focus {
+        border: 2px solid var(--slate-gray);
+    }
+}

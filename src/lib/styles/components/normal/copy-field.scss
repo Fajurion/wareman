@@ -1,0 +1,20 @@
+.copy-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--outer-space);
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+
+    .icon {
+        cursor: pointer;
+        transition: 250ms all ease;
+        padding: 0.5rem;
+        border-radius: 1.3rem;
+
+        &:hover {
+            color: var(--primary);
+            background-color: var(--onyx);
+        }
+    }
+}

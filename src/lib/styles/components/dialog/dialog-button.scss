@@ -1,0 +1,14 @@
+.dialog-button {
+    padding: 0.5rem 0.7rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--outer-space);
+    transition: 250ms background-color ease;
+
+    &:hover {
+        background-color: var(--onyx);
+    }
+}
