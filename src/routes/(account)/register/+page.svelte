@@ -12,6 +12,11 @@
 
     async function create() {
 
+        if(username.length > 32) {
+            alert("Username is too long!");
+            return;
+        }
+
         let res = await post("/account/create", JSON.stringify({
             "username": username,
             "license": license

@@ -1,8 +1,24 @@
 <script lang="ts">
+    import { goto } from "$app/navigation";
     import logo from "$lib/assets/fajurion.png";
+    import { get, post } from "$lib/script/constants";
 
-    function login() {
-        
+    let username: string, password: string;
+
+    async function login() {
+
+        const res = await post("/auth/login", JSON.stringify({
+            "username": username,
+            "password": password
+        }));
+
+        if(res.success) {
+            localStorage.setItem("token", res.token);
+            goto("/dash")
+        }
+
+        username = ""
+        password = ""
     }
 </script>
 
@@ -16,8 +32,8 @@
         <div class="form">
             <h3>Account login</h3>
 
-            <input class="text-medium" type="text" placeholder="Username" />
-            <input class="text-medium" type="password" placeholder="Password" />
+            <input bind:value={username} class="text-medium" type="text" placeholder="Username" />
+            <input bind:value={password} class="text-medium" type="password" placeholder="Password" />
 
             <button on:click={login} class="text-medium">Login</button>
         </div>
