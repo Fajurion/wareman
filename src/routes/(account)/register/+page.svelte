@@ -93,6 +93,7 @@
     @import "$lib/styles/components/dialog/dialog-button.scss";
     @import "$lib/styles/components/normal/copy-field.scss";
     @import "$lib/styles/form.scss";
+    @import "$lib/styles/components/title.scss";
 
     .df {
         margin-top: 0.3rem;

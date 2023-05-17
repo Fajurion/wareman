@@ -1,1 +1,3 @@
-<h1>SUPER COOL DASHBOARD</h1>
+<script lang="ts">
+    
+</script>

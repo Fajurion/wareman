@@ -46,5 +46,5 @@
 
 <style lang="scss">
     @import "$lib/styles/form.scss";
-
+    @import "$lib/styles/components/title.scss";
 </style>
